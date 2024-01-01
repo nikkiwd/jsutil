@@ -44,6 +44,12 @@ export function is_valid_sid(sid) {
 	return false;
 }
 
+export function is_valid_zid(zid) {
+	if (sid && sid.match(/^Z[1-9][0-9]*$/))
+		return true;
+	return false;
+}
+
 export function is_valid_llid(llid) {
 	return is_valid_qid(llid);
 }
