@@ -9,6 +9,11 @@ export async function sleep(milliseconds) {
 	return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
+// see https://stackoverflow.com/a/43046408
+export function uniq (array) {
+	return [...new Set(array)];
+}
+
 // see https://javascript.info/task/ucfirst
 export function ucfirst(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
